@@ -275,14 +275,14 @@ def find_client(pas):
 
 def start_all():
     pas = input('Введите пароль для работы сбазой данных postgreSQL: ')
-    create_data_tables(pas)  # 1. Функция, создающая структуру БД (таблицы)
-    add_client(pas)  # 2. Функция, позволяющая добавить нового клиента
-    add_phone(pas)  # 3. Функция, позволяющая добавить телефон для существующего клиента
-    change_data(pas)  # 4. Функция, позволяющая изменить данные о клиенте
-    del_num(pas)  # 5. Функция, позволяющая удалить телефон для существующего клиента
-    del_client(pas)  # 6. Функция, позволяющая удалить существующего клиента
-    find_client(pas)  # 7. Функция, позволяющая найти клиента по его данным (имени, фамилии, email-у или телефону)
-    # del_all(pas)  # Удаляет все таблицы
+    create_data_tables(pas) 
+    add_client(pas)  
+    add_phone(pas)  
+    change_data(pas)  
+    del_num(pas) 
+    del_client(pas)  
+    find_client(pas)  
+    # del_all(pas) 
 
 
 start_all()
